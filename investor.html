@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="investor.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">NGO Name</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="new.html">Home</a></li>
+                <!-- <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Contact Us</a></li> -->
+            </ul>
+        </nav> 
+    </header>
+
+    <section class="investors-section">
+        <div class="section-heading">
+            <h2>Our Investors</h2>
+        </div>
+        <div class="investor-cards">
+            <div class="investor-card" data-contributions="Donated $50,000 for education programs">
+                <h3>Investor Name 1</h3>
+                <img src="dark 1.jpg" alt="Investor 1 Photo" class="investor-photo">
+            </div>
+            <div class="investor-card" data-contributions="Sponsored medical camps for children">
+                <h3>Investor Name 2</h3>
+                <img src="dark 1.jpg" alt="Investor 2 Photo" class="investor-photo" >
+            </div>
+            <!-- Add more investor cards as needed -->
+        </div>
+    </section>
+
+    <div id="modal" class="modal"><div class="modal-content"><span class="close">&times;</span><p id="contributionsText"></p><img src="" alt="Investor Photo" id="investorModalPhoto" class="modal-photo"></div></div>
+    <!-- Modal for displaying contributions -->
+   
+
+    <script src="investor.js"></script>
+</body>
+</html>
+

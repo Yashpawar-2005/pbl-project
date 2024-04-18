@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="logo">
+        <img src="ngo_logo.png" alt="NGO Logo">
+    </div>
+    <h2>Welcome Back!</h2>
+    <div class="tabs">
+        <button id="loginTab" class="active" onclick="toggleForm('loginForm')">Login</button>
+        <button id="signupTab" onclick="toggleForm('signupForm')">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form active" onsubmit="return validateForm('login')">
+        <div class="input-group">
+            <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+        <p id="loginErrorMsg" class="error-message"></p>
+    </form>
+
+    <!-- Sign Up Form -->
+    <form id="signupForm" class="auth-form" onsubmit="return validateForm('signup')">
+        <div class="input-group">
+            <input type="text" id="signupUsername" name="signupUsername" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p id="signupErrorMsg" class="error-message"></p>
+    </form>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
+
